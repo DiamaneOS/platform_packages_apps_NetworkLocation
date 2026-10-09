@@ -96,8 +96,9 @@ class ApplePositioningService {
         return URL(when (setting) {
             NETWORK_LOCATION_APPLE_CHINA ->
                 "https://gs-loc-cn.apple.com/clls/wloc"
+            // DiamaneOS: the proxy choice uses the DiamaneOS relay to Apple's service.
             NETWORK_LOCATION_GRAPHENEOS_APPLE_PROXY ->
-                "https://gs-loc.apple.grapheneos.org/clls/wloc"
+                "https://location.diamaneos.de/clls/wloc"
             NETWORK_LOCATION_APPLE ->
                 "https://gs-loc.apple.com/clls/wloc"
             NETWORK_LOCATION_DISABLED ->

@@ -2,7 +2,8 @@
 <network-security-config>
     <base-config cleartextTrafficPermitted="false"/>
     <domain-config>
-        <domain includeSubdomains="true">gs-loc.apple.grapheneos.org</domain>
+        <!-- DiamaneOS: the same pins for the DiamaneOS relay, which uses Let's Encrypt certificates. -->
+        <domain includeSubdomains="true">location.diamaneos.de</domain>
         <!-- no expiry since the app is expected to be kept relatively up-to-date to use the services -->
         <pin-set>
             <!-- ISRG Root X1 -->
